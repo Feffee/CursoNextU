@@ -1,0 +1,312 @@
+/* Importando Fuente desde la web */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+/* Importada localmente por si no hay conexión a internet */
+@font-face {
+  font-family: 'DancingScript';
+  src: url('../fonts/DancingScript-Regular.otf');
+}
+
+*
+{
+	margin:0;
+}
+
+body{
+  background-color: #02010A;
+  font-family: 'DancingScript';
+	font-size: 18px;
+}
+
+
+#cabecera{
+  background-color: #5B7989;
+  color: white;
+  text-shadow: 2px 2px #02010A;
+  border-radius: 10px;
+  animation-name: header-animacion;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes header-animacion{
+  0%{
+    margin-top: 150%;
+  }
+
+  60%{
+    margin-top: -5%;
+  }
+
+  100%{
+    margin-top: 0%;
+  }
+}
+
+#cabecera h1{
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+
+#navegacion a:link, #navegacion a:visited{
+  text-decoration: underline;
+  text-shadow: none;
+  color: white;
+}
+
+#navegacion a.activa{
+  text-decoration: none;
+}
+
+#contenido{
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #D5C75F;
+}
+
+.centro{
+  background-color: #82C3A6;
+}
+
+#imgcentral{
+  width: 70%;
+	box-shadow: 2px 2px #02010A;
+}
+
+.secundaria{
+  background-color: #D5C75F;
+  border: 1px;
+}
+
+#imgizq:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px #82C3A6;
+}
+
+#imgder:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px #82C3A6;
+}
+
+footer{
+	border-radius: 8px;
+	background-color: #C6D5C5;
+}
+
+footer a:link, a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+/* Desktop */
+@media (min-width:900px) {
+	#cabecera{
+		padding-right: 0%;
+	}
+
+	#navegacion{
+    padding-left: 57%;
+    text-align: right;
+    display: inline;
+  }
+
+/* INDEX */
+	.secundaria{
+		display: flex;
+		flex: 1 2 40%;
+	}
+
+	#imgder{
+		width: 80%;
+		margin: 2%;
+		box-shadow: 2px 2px #02010A;
+		order: 2;
+	}
+
+	#imgizq{
+	  width: 90%;
+		margin: 2%;
+		box-shadow: 2px 2px #02010A;
+		order: 1;
+	}
+
+/* PAISAJES Y RETRATOS */
+	#contenido{
+		display: flex;
+	}
+
+	.c1.c2.c3{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	/* columna1 */
+	.c1>#pyr1{
+		width: 55%;
+		margin: 2%;
+		-webkit-filter: blur(10px);
+		filter: blur(10px);
+	}
+
+	.c1>#pyr4{
+		width: 55%;
+		margin: 2%;
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	/* columna2 */
+	.c2>#pyr2{
+		width: 55%;
+		margin: 2%;
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	.c2>#pyr5{
+		width: 55%;
+		margin: 2%;
+	}
+
+	/* columna 3 */
+	.c3>#pyr3{
+		width: 55%;
+		margin: 2%;
+		-webkit-filter: sepia(90%);
+		filter: sepia(90%);
+	}
+
+	.c3>#pyr6{
+		width: 55%;
+		margin: 2%;
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	footer{
+		display: flex;
+		flex: 4 3 2 1;
+	}
+
+	.contacto{
+		order: 1;
+		width: 80%;
+		margin: 2%;
+	}
+
+	.terminos{
+		order: 2;
+		width: 80%;
+		margin: 2%;
+	}
+
+	.social{
+		order: 3;
+		width: 80%;
+		margin: 2%;
+	}
+
+	.derechos{
+		order: 4;
+		width: 80%;
+		margin: 2%;
+	}
+}
+
+/* Dispositivos Moviles */
+@media (max-width:900px) {
+  #cabecera{
+    text-align: center;
+  }
+
+  #navegacion{
+    text-align: center;
+  }
+
+  .contenido{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+/* INDEX */
+
+  #imgcentral{
+    width: 80%;
+  }
+
+  .secundaria{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #imgizq{
+    width: 80%;
+  }
+
+  #imgder{
+    width: 80%;
+  }
+
+/* PAISAJES Y RETRATOS */
+
+  #contenido{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pyr1{
+    width: 70%;
+    margin: 2%;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  #pyr4{
+    width: 70%;
+    margin: 2%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  #pyr2{
+    width: 70%;
+    margin: 2%;
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+  }
+
+  #pyr5{
+    width: 70%;
+    margin: 2%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  #pyr3{
+    width: 70%;
+    margin: 2%;
+  }
+
+  #pyr6{
+    width: 70%;
+    margin: 2%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .contacto{
+    height: 30%;
+  }
+
+  .terminos{
+    height: 30%;
+  }
+
+  .social{
+    height: 30%;
+  }
+
+  .derechos{
+    height: 30%;
+  }
+}
