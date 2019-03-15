@@ -1,0 +1,31 @@
+.cocinando{
+  background-image: url("../img/g2.jpg");
+}
+
+.opacity{
+  background-color: rgba(0,170,255,0.5);
+}
+
+.titulo{
+  color: white;
+}
+
+.slogan{
+  text-align: right;
+  color: white;
+}
+
+.main{
+  padding-top: 10px;
+}
+
+.fpubli{
+  text-align: left;
+  color: white;
+}
+
+.comment{
+  width: 10%;
+  display: inline;
+  margin-left: 5px;
+}

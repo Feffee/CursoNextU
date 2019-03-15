@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <!-- MaterializeCSS -->
+    <!--Importar la fuente de los íconos de Google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Importar la hojas de estilos de materialize css-->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <title>Blog de Turismo</title>
+  </head>
+  <body style="background-image: url(img/fondoturismo.jpg); background-attachment: fixed">
+    <div class="col l12 s12">
+      <div class="row">
+        <!-- Desktop -->
+        <a href="#" class="brand-logo perfil hide-on-med-and-down"><img src="img/turismologo.jpg" alt="BlogTurismo" id="logoturismo" alt="perfil" class="responsive-img"></a>
+        <ul class="hide-on-med-and-down right">
+          <a href="#" class="btn waves-effect waves-light blue"><i class="material-icons left">home</i>Inicio</a>
+          <a href="#" class="btn waves-effect waves-light blue"><i class="material-icons left">add_location</i>Estube en...</a>
+          <a href="#" class="btn waves-effect waves-light blue"><i class="material-icons left">grade</i>Mejores Viajes</a>
+          <a href="#" class="btn waves-effect waves-light blue"><i class="material-icons left">feedback</i>Recomendaciones</a>
+        </ul>
+        <h4 class="slogan1 hide-on-med-and-down"><i>Creando mi propio camino</i></h4>
+
+        <!-- Mobiles y pantallas pequeñas -->
+        <a href="#" class="brand-logo perfil hide-on-large-only"><img src="img/turismologo.jpg" alt="BlogTurismo" id="logoturismo2" alt="perfil" class="responsive-img"></a>
+        <ul class="hide-on-large-only right">
+          <a href="#" class="btn waves-effect waves-light blue"><i class="material-icons">home</i></a>
+          <a href="#" class="btn waves-effect waves-light blue"><i class="material-icons">add_location</i></a>
+          <a href="#" class="btn waves-effect waves-light blue"><i class="material-icons">grade</i></a>
+          <br>
+          <a href="#" class="btn waves-effect waves-light blue naveg"><i class="material-icons">feedback</i></a>
+        </ul>
+        <h5 class="slogan2 hide-on-large-only left"><i>Creando mi propio camino</i></h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col l1 hide-on-med-and-down">
+        <ul class="center-align">
+          <li><a href="#" class="btn-floating btn-large blue mainlogo"><img src="img/fb.png" alt="Facebook" class="logo"></a></li>
+          <li><a href="#" class="btn-floating btn-large blue mainlogo"><img src="img/tw.png" alt="Twitter" class="logo"></a></li>
+          <li><a href="#" class="btn-floating btn-large blue mainlogo"><img src="img/ig.png" alt="Instagram" class="logo"></a></li>
+          <li><a href="#" class="btn-floating btn-large blue mainlogo"><img src="img/yt.png" alt="YouTube" class="logo"></a></li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col l4 s12">
+          <img src="img/turismo-img1.jpg" alt="Jamaica" class="responsive-img der">
+          <img src="img/turismo-img2.jpg" alt="Playas" class="responsive-img der">
+        </div>
+        <div class="col l3 s12">
+          <img src="img/turismo-img3.jpg" alt="Cueva" class="responsive-img centro">
+        </div>
+        <div class="col l4 s12">
+          <img src="img/turismo-img5.jpg" alt="Montañas" class="responsive-img izq">
+          <img src="img/turismo-img6.jpg" alt="Paisaje" class="responsive-img izq">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col l8 s12">
+        <div class="row">
+          <div class="card-panel white black-text">
+            <div class="col l4 s12">
+              <img src="img/acuariosevilla.jpg" alt="Acuario de Sevilla" class="publi">
+            </div>
+            <h4>El Acuario</h4>
+            <div class="chip">
+              16 de febrero del 2019 <i class="material-icons">today</i>
+            </div>
+            <div class="chip">
+              Sevilla, España <i class="material-icons">location_on</i>
+            </div>
+            <p class="flow-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div class="row blue white-text">
+          <form id="comentario">
+            <div class="input-field col l6 s12">
+              <i class="material-icons prefix">perm_identity</i>
+              <input type="text" name="nya" id="nya" class="validate">
+              <label for="nya" class="white-text">Nombre y Apellido</label>
+            </div>
+            <div class="input-field col l6 s12">
+              <i class="material-icons prefix">email</i>
+              <input type="email" name="email" id="email" class="validate">
+              <label for="email" class="white-text" data-success="email correcto" data-error="Ingresa un email valido">E-mail</label>
+            </div>
+            <div class="input-field col l12 s12">
+              <i class="material-icons prefix">chat_bubble</i>
+              <textarea name="texto" id="texto" class="materialize-textarea"></textarea>
+              <label for="texto" class="white-text">Comentario</label>
+            </div>
+            <button type="submit" name="enviar" class="btn-flat waves-effect waves-light light-blue lighten-2 white-text btnform">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col l4 s12">
+        <div class="card-panel white black-text">
+          <div class="card">
+            <img src="img/autor1.jpg" alt="Perfil Autor" class="circle responsive-img">
+            <h4>Perfil del Autor</h4>
+          </div>
+          <p class="flow-text perfil">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- MaterializeCSS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
